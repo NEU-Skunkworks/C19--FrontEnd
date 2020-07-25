@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { ErrorBanner } from '../../lib/components';
 import { Toolbar } from '../../components';
 import { ContributorCard, ContributorSkeleton } from './components';
-import { getContributors } from '../../lib/api';
+import { getContributors }   from '../../lib/api';
 import { useQuery } from 'react-query';
 import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
@@ -73,7 +73,7 @@ const dataSource = sortContributors(data);
       <AppBar position="relative">
           <Typography variant="h5" component="h1" color="inherit" noWrap>
             Contributor
-          </Typography> 
+          </Typography>
       </AppBar>
       <GridList cellHeight={280} className={classes.gridList} cols={2}>
       {isFetching && <ContributorSkeleton />}
@@ -85,7 +85,8 @@ const dataSource = sortContributors(data);
           </GridListTile>
         ))}
       </GridList>
-      
+
     </Container>
   );
 };
+
