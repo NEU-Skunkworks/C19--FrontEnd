@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
 import { MdClear } from 'react-icons/md';
-import { MultiValuedSelect } from '../../../../components';
+import { MultiValuedSelect } from '../../../MultiValuedSelect';
 import { skillsData } from '../../../../constants';
 
 const useStyles = makeStyles({

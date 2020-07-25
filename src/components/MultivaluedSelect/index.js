@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
-import Input from '@material-ui/core/Input';
-import Chip from '@material-ui/core/Chip';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
+//import Input from './node_modules/@material-ui/core/Input';
+//import Chip from './node_modules/@material-ui/core/Chip';
+//import Select from './node_modules/@material-ui/core/Select';
+//import MenuItem from './node_modules/@material-ui/core/MenuItem';
+
+//fixed the bug by adding importing material-ui/core directly
+
+import { Select, Input, Chip, MenuItem } from '@material-ui/core';
 
 function getStyles(dropdown, data) {
   return {
     fontWeight: data.indexOf(dropdown) === -1 ? 'normal' : 'bold',
   };
 }
-class MultiValuedSelect extends Component {
+
+ export class MultiValuedSelect extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -93,3 +98,5 @@ class MultiValuedSelect extends Component {
 }
 
 export default MultiValuedSelect;
+
+
