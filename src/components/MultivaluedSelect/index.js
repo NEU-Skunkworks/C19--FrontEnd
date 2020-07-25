@@ -97,6 +97,6 @@ function getStyles(dropdown, data) {
   }
 }
 
-export default MultiValuedSelect;
+export default MultiValuedSelect ;
 
 
